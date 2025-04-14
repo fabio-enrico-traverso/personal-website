@@ -1,0 +1,114 @@
+/* === Global settings === */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+}
+
+/* === Header and Navigation === */
+nav {
+  background-color: #0065BD; /* TU Darmstadt Blue */
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+
+/* === Page Container === */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* === Headings === */
+h1, h2, h3 {
+  font-weight: 600;
+  color: #003359; /* TU Dark Blue */
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* === Links === */
+a {
+  color: #0065BD;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* === Responsive tweaks === */
+@media (max-width: 700px) {
+  .container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.about-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #003359; /* TU dark blue */
+}
+
+.profile-pic {
+  width: 120px;
+  height: auto;
+  border-radius: 50%; /* circular image */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+  footer {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+footer span {
+  color: #555;
+}
