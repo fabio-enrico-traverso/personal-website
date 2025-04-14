@@ -9,6 +9,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research</title>
+  <style>
+    /* Custom styles for the image and text layout */
+    .working-paper-description {
+      display: flex;
+      align-items: flex-start;
+    }
+    .working-paper-description img {
+      max-width: 300px; /* Adjust the size as needed */
+      height: auto;
+      margin-left: 20px; /* Space between the text and the image */
+    }
+    .working-paper-description p {
+      flex: 1; /* Allow the text to take up available space */
+    }
+  </style>
 </head>
 <body>
   <nav>
@@ -20,14 +35,16 @@
   <div class="container">
     <h1>Research</h1>
     <h2>Working Papers</h2>
-    <p>
-      <a href="https://www.gtap.agecon.purdue.edu/resources/res_display.asp?RecordID=6377" target="_blank">
-        <strong>"A Global Foreign Direct Investment Stocks Database"</strong>
-      </a><br>
-      Conference papers 333293, Purdue University, Center for Global Trade Analysis, Global Trade Analysis Project. Joint with Eddy Bekkers, Csilla Lakatos and Yu, Roger So<br><br>
-      <em>Description</em>: We construct a three-dimensional (bilateral, by sector) global FDI stock database for the baseline year of 2014 and 2017 which is compatible with the GTAP version 10 and version 11 database. To do so, we perform a gravity estimation on bilateral and by sector FDI stock data collected from the Eurostat and the ITC Investment Map which is subsequently used to extrapolate for a complete dataset by filling in all missing data. Next, the extrapolated dataset is reconciled under a quadratic optimisation procedure with higher dimension FDI data collected from the OECD, UNCTAD and IMF. Finally, we adopt a novel computational method based on the probabilistic theory of absorbing Markov chains to further adjust the reconciled database, its purpose is to correct for geographical distortions in the FDI statistics caused by the presence of tax havens. This paper serves as an update to the previous global FDI database constructed by Gouel et al. 2012 which is based on the GTAP version 7 database with the baseline year of 2004.<br><br>
-      <img src="haven_United_States.png" alt="FDI Statistics Comparison for the United States" style="max-width: 100%; height: auto;">
-    </p>
+    <div class="working-paper-description">
+      <p>
+        <a href="https://www.gtap.agecon.purdue.edu/resources/res_display.asp?RecordID=6377" target="_blank">
+          <strong>"A Global Foreign Direct Investment Stocks Database"</strong>
+        </a><br>
+        Conference papers 333293, Purdue University, Center for Global Trade Analysis, Global Trade Analysis Project. Joint with Eddy Bekkers, Csilla Lakatos and Yu, Roger So<br><br>
+        <em>Description</em>: We construct a three-dimensional (bilateral, by sector) global FDI stock database for the baseline year of 2014 and 2017 which is compatible with the GTAP version 10 and version 11 database. To do so, we perform a gravity estimation on bilateral and by sector FDI stock data collected from the Eurostat and the ITC Investment Map which is subsequently used to extrapolate for a complete dataset by filling in all missing data. Next, the extrapolated dataset is reconciled under a quadratic optimisation procedure with higher dimension FDI data collected from the OECD, UNCTAD and IMF. Finally, we adopt a novel computational method based on the probabilistic theory of absorbing Markov chains to further adjust the reconciled database, its purpose is to correct for geographical distortions in the FDI statistics caused by the presence of tax havens. This paper serves as an update to the previous global FDI database constructed by Gouel et al. 2012 which is based on the GTAP version 7 database with the baseline year of 2004.
+      </p>
+      <img src="haven_United_States.png" alt="FDI Statistics Comparison for the United States">
+    </div>
 
     <h2>Research in Progress</h2>
     <h3>Thesis Chapters</h3>
@@ -54,3 +71,4 @@
   </script>
 </body>
 </html>
+
