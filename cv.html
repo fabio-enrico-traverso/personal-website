@@ -7,6 +7,9 @@
   <title>CV</title>
   <link rel="stylesheet" href="style.css">
 </head>
+  <script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 <body>
   <nav>
     <a href="index.html">About Me</a>
@@ -19,4 +22,7 @@
     <p>Download my CV: <a href="CV.pdf" target="_blank">Click here</a></p>
   </div>
 </body>
+  <footer>
+  © <span id="year"></span> Fabio Enrico Traverso — All Rights Reserved.
+</footer>
 </html>
