@@ -11,16 +11,17 @@
   <title>Research</title>
   <style>
     /* Custom styles for the image and text layout */
-    .working-paper-description {
+    .description-container {
       display: flex;
       align-items: flex-start;
+      margin-bottom: 20px; /* Space between sections */
     }
-    .working-paper-description img {
+    .description-container img {
       max-width: 300px; /* Adjust the size as needed */
       height: auto;
       margin-left: 20px; /* Space between the text and the image */
     }
-    .working-paper-description p {
+    .description-container p {
       flex: 1; /* Allow the text to take up available space */
     }
   </style>
@@ -35,7 +36,7 @@
   <div class="container">
     <h1>Research</h1>
     <h2>Working Papers</h2>
-    <div class="working-paper-description">
+    <div class="description-container">
       <p>
         <a href="https://www.gtap.agecon.purdue.edu/resources/res_display.asp?RecordID=6377" target="_blank">
           <strong>"A Global Foreign Direct Investment Stocks Database"</strong>
@@ -48,20 +49,27 @@
 
     <h2>Research in Progress</h2>
     <h3>Thesis Chapters</h3>
-    <ul>
-      <li>
+    <div class="description-container">
+      <p>
         <strong>Automation, Trade, and Political Outcomes: Evidence from the United States</strong>
         <p><em>Description</em>: This chapter explores the relationship between automation, international trade, and political outcomes in the United States. It analyzes how automation and trade policies influence political dynamics and societal changes.</p>
-      </li>
-      <li>
+      </p>
+      <img src="spat_corr_shocks.png" alt="Automation and Trade Shocks in the United States">
+    </div>
+    <div class="description-container">
+      <p>
         <strong>"On the Transition from Democracy to Autocracy: The Role of Violent Avant-Gardes"</strong>
         <p><em>Description</em>: Joint work with Alberto Bisin and Thierry Verdier. This chapter investigates the role of violent avant-gardes in the transition from democratic to autocratic regimes, focusing on historical and contemporary case studies.</p>
-      </li>
-      <li>
+      </p>
+      <img src="Fig4.png" alt="Transition from Democracy to Autocracy">
+    </div>
+    <div class="description-container">
+      <p>
         <strong>Trade Diversion and the Rise of Türkiye: The Impact of the Iranian Revolution</strong>
         <p><em>Description</em>: This chapter examines how the Iranian Revolution led to trade diversion and the subsequent economic rise of Türkiye. It analyzes the long-term economic and political implications of this historical event.</p>
-      </li>
-    </ul>
+      </p>
+      <img src="graph_IRN_TUR.png" alt="Trade Diversion and the Rise of Türkiye">
+    </div>
   </div>
   <footer>
     © <span id="year"></span> Fabio Enrico Traverso — All Rights Reserved.
