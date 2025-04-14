@@ -83,3 +83,23 @@ footer {
     margin: 10px 0;
   }
 }
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.about-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #003359; /* TU dark blue */
+}
+
+.profile-pic {
+  width: 120px;
+  height: auto;
+  border-radius: 50%; /* circular image */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
