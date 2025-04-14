@@ -24,6 +24,13 @@
     .description-container p {
       flex: 1; /* Allow the text to take up available space */
     }
+    .description-container .title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .description-container .description {
+      margin-top: 0;
+    }
   </style>
 </head>
 <body>
@@ -37,38 +44,54 @@
     <h1>Research</h1>
     <h2>Working Papers</h2>
     <div class="description-container">
-      <p>
-        <a href="https://www.gtap.agecon.purdue.edu/resources/res_display.asp?RecordID=6377" target="_blank">
-          <strong>"A Global Foreign Direct Investment Stocks Database"</strong>
-        </a><br>
-        Conference papers 333293, Purdue University, Center for Global Trade Analysis, Global Trade Analysis Project. Joint with Eddy Bekkers, Csilla Lakatos and Yu, Roger So<br><br>
-        <em>Description</em>: We construct a three-dimensional (bilateral, by sector) global FDI stock database for the baseline year of 2014 and 2017 which is compatible with the GTAP version 10 and version 11 database. To do so, we perform a gravity estimation on bilateral and by sector FDI stock data collected from the Eurostat and the ITC Investment Map which is subsequently used to extrapolate for a complete dataset by filling in all missing data. Next, the extrapolated dataset is reconciled under a quadratic optimisation procedure with higher dimension FDI data collected from the OECD, UNCTAD and IMF. Finally, we adopt a novel computational method based on the probabilistic theory of absorbing Markov chains to further adjust the reconciled database, its purpose is to correct for geographical distortions in the FDI statistics caused by the presence of tax havens. This paper serves as an update to the previous global FDI database constructed by Gouel et al. 2012 which is based on the GTAP version 7 database with the baseline year of 2004.
-      </p>
+      <div>
+        <p class="title">
+          <a href="https://www.gtap.agecon.purdue.edu/resources/res_display.asp?RecordID=6377" target="_blank">
+            "A Global Foreign Direct Investment Stocks Database"
+          </a>
+        </p>
+        <p class="description">
+          Conference papers 333293, Purdue University, Center for Global Trade Analysis, Global Trade Analysis Project. Joint with Eddy Bekkers, Csilla Lakatos and Yu, Roger So<br><br>
+          <em>Description</em>: We construct a three-dimensional (bilateral, by sector) global FDI stock database for the baseline year of 2014 and 2017 which is compatible with the GTAP version 10 and version 11 database. To do so, we perform a gravity estimation on bilateral and by sector FDI stock data collected from the Eurostat and the ITC Investment Map which is subsequently used to extrapolate for a complete dataset by filling in all missing data. Next, the extrapolated dataset is reconciled under a quadratic optimisation procedure with higher dimension FDI data collected from the OECD, UNCTAD and IMF. Finally, we adopt a novel computational method based on the probabilistic theory of absorbing Markov chains to further adjust the reconciled database, its purpose is to correct for geographical distortions in the FDI statistics caused by the presence of tax havens. This paper serves as an update to the previous global FDI database constructed by Gouel et al. 2012 which is based on the GTAP version 7 database with the baseline year of 2004.
+        </p>
+      </div>
       <img src="haven_United_States.png" alt="FDI Statistics Comparison for the United States">
     </div>
 
     <h2>Research in Progress</h2>
     <div class="description-container">
-      <p>
-        <a href="Automation__Trade_and_Political_Outcomes.pdf" target="_blank">
-          <strong>Automation, Trade, and Political Outcomes: Evidence from the United States</strong>
-        </a>
-        <p><em>Description</em>: This chapter explores the relationship between automation, international trade, and political outcomes in the United States. It analyzes how automation and trade policies influence political dynamics and societal changes.</p>
-      </p>
+      <div>
+        <p class="title">
+          <a href="Automation__Trade_and_Political_Outcomes.pdf" target="_blank">
+            Automation, Trade, and Political Outcomes: Evidence from the United States
+          </a>
+        </p>
+        <p class="description">
+          <em>Description</em>: This chapter explores the relationship between automation, international trade, and political outcomes in the United States. It analyzes how automation and trade policies influence political dynamics and societal changes.
+        </p>
+      </div>
       <img src="spat_corr_shocks.png" alt="Automation and Trade Shocks in the United States">
     </div>
     <div class="description-container">
-      <p>
-        <strong>"On the Transition from Democracy to Autocracy: The Role of Violent Avant-Gardes"</strong>
-        <p><em>Description</em>: Joint work with Alberto Bisin and Thierry Verdier. This chapter investigates the role of violent avant-gardes in the transition from democratic to autocratic regimes, focusing on historical and contemporary case studies.</p>
-      </p>
+      <div>
+        <p class="title">
+          "On the Transition from Democracy to Autocracy: The Role of Violent Avant-Gardes"
+        </p>
+        <p class="description">
+          <em>Description</em>: Joint work with Alberto Bisin and Thierry Verdier. This chapter investigates the role of violent avant-gardes in the transition from democratic to autocratic regimes, focusing on historical and contemporary case studies.
+        </p>
+      </div>
       <img src="Fig4.png" alt="Transition from Democracy to Autocracy">
     </div>
     <div class="description-container">
-      <p>
-        <strong>Trade Diversion and the Rise of Türkiye: The Impact of the Iranian Revolution</strong>
-        <p><em>Description</em>: This chapter examines how the Iranian Revolution led to trade diversion and the subsequent economic rise of Türkiye. It analyzes the long-term economic and political implications of this historical event.</p>
-      </p>
+      <div>
+        <p class="title">
+          Trade Diversion and the Rise of Türkiye: The Impact of the Iranian Revolution
+        </p>
+        <p class="description">
+          <em>Description</em>: This chapter examines how the Iranian Revolution led to trade diversion and the subsequent economic rise of Türkiye. It analyzes the long-term economic and political implications of this historical event.
+        </p>
+      </div>
       <img src="graph_IRN_TUR.png" alt="Trade Diversion and the Rise of Türkiye">
     </div>
   </div>
