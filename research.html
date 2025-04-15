@@ -13,16 +13,17 @@
     /* Custom styles for the image and text layout */
     .description-container {
       display: flex;
-      align-items: flex-start;
+      flex-direction: column;
+      align-items: center;
       margin-bottom: 20px; /* Space between sections */
     }
     .description-container img {
-      max-width: 300px; /* Adjust the size as needed */
+      max-width: 100%; /* Adjust the size as needed */
       height: auto;
-      margin-left: 20px; /* Space between the text and the image */
+      margin-bottom: 10px; /* Space between the image and the text */
     }
     .description-container p {
-      flex: 1; /* Allow the text to take up available space */
+      text-align: center; /* Center the text */
     }
     .description-container .title {
       font-weight: bold;
@@ -30,6 +31,39 @@
     }
     .description-container .description {
       margin-top: 0;
+    }
+
+    /* Responsive navigation bar */
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    nav a {
+      margin: 5px 0;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Media queries for larger screens */
+    @media (min-width: 600px) {
+      .description-container {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+      .description-container img {
+        max-width: 300px; /* Adjust the size as needed */
+        margin-left: 20px; /* Space between the text and the image */
+      }
+      .description-container p {
+        text-align: left; /* Align text to the left on larger screens */
+      }
+      nav {
+        flex-direction: row;
+      }
+      nav a {
+        margin: 0 10px;
+      }
     }
   </style>
 </head>
@@ -44,6 +78,7 @@
     <h1>Research</h1>
     <h2>Working Papers</h2>
     <div class="description-container">
+      <img src="haven_United_States.png" alt="FDI Statistics Comparison for the United States">
       <div>
         <p class="title">
           <a href="https://www.gtap.agecon.purdue.edu/resources/res_display.asp?RecordID=6377" target="_blank">
@@ -55,11 +90,11 @@
           <em>Description</em>: We construct a three-dimensional (bilateral, by sector) global FDI stock database for the baseline year of 2014 and 2017 which is compatible with the GTAP version 10 and version 11 database. To do so, we perform a gravity estimation on bilateral and by sector FDI stock data collected from the Eurostat and the ITC Investment Map which is subsequently used to extrapolate for a complete dataset by filling in all missing data. Next, the extrapolated dataset is reconciled under a quadratic optimisation procedure with higher dimension FDI data collected from the OECD, UNCTAD and IMF. Finally, we adopt a novel computational method based on the probabilistic theory of absorbing Markov chains to further adjust the reconciled database, its purpose is to correct for geographical distortions in the FDI statistics caused by the presence of tax havens. This paper serves as an update to the previous global FDI database constructed by Gouel et al. 2012 which is based on the GTAP version 7 database with the baseline year of 2004.
         </p>
       </div>
-      <img src="haven_United_States.png" alt="FDI Statistics Comparison for the United States">
     </div>
 
     <h2>Research in Progress</h2>
     <div class="description-container">
+      <img src="spat_corr_shocks.png" alt="Automation and Trade Shocks in the United States">
       <div>
         <p class="title">
           <a href="Automation__Trade_and_Political_Outcomes.pdf" target="_blank">
@@ -70,9 +105,9 @@
           <em>Description</em>: This chapter explores the relationship between industrial automation, international trade, and political outcomes in the United States.
         </p>
       </div>
-      <img src="spat_corr_shocks.png" alt="Automation and Trade Shocks in the United States">
     </div>
     <div class="description-container">
+      <img src="Fig4.png" alt="Transition from Democracy to Autocracy">
       <div>
         <p class="title">
           "The Political Economy of Autocratic Transitions: The Role of Delegation of Violence"
@@ -81,9 +116,9 @@
           <em>Description</em>: Joint work with Alberto Bisin and Thierry Verdier. DRAFT COMING SOON
         </p>
       </div>
-      <img src="Fig4.png" alt="Transition from Democracy to Autocracy">
     </div>
     <div class="description-container">
+      <img src="graph_IRN_TUR.png" alt="Trade Diversion and the Rise of Türkiye">
       <div>
         <p class="title">
           Trade Diversion and the Rise of Türkiye: The Impact of the Iranian Revolution
@@ -92,7 +127,6 @@
           <em>Description</em>: This chapter examines how the Iranian Revolution led to trade diversion and the subsequent diplomatic shifts that imvolved all the three Cold War blocks: NATO, Warsaw Pact and MNA.
         </p>
       </div>
-      <img src="graph_IRN_TUR.png" alt="Trade Diversion and the Rise of Türkiye">
     </div>
   </div>
   <footer>
