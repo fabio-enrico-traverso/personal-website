@@ -8,9 +8,18 @@
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research</title>
+  <meta name="description" content="Research page of Fabio Enrico Traverso - PhD Student in International Economics and Political Economy.">
+  <meta name="keywords" content="Fabio Enrico Traverso, PhD Student, International Economics, Political Economy, Economic History, Research, Working Papers">
+  <meta name="author" content="Fabio Enrico Traverso">
+  <title>Research - Fabio Enrico Traverso</title>
   <style>
-    /* Custom styles for the image and text layout */
+    .profile-pic {
+      max-width: 50%;      /* Scales 1.5x relative to container, but safely */
+      width: 100%;          /* Responsive within that limit */
+      height: auto;         /* Keeps the correct aspect ratio */
+      display: block;       /* Enables margin auto centering */
+      margin: 0 auto;       /* Centers the image horizontally */
+    }
     .description-container {
       display: flex;
       flex-direction: column;
@@ -32,13 +41,9 @@
     .description-container .description {
       margin-top: 0;
     }
-
-    /* Center the headers */
     h1, h2 {
       text-align: center;
     }
-
-    /* Responsive navigation bar */
     nav {
       display: flex;
       flex-direction: column;
@@ -49,8 +54,6 @@
       padding: 10px;
       text-align: center;
     }
-
-    /* Media queries for larger screens */
     @media (min-width: 600px) {
       .description-container {
         flex-direction: row;
@@ -79,8 +82,12 @@
     <a href="cv.html">CV</a>
     <a href="misc.html">Miscellanea</a>
   </nav>
+
   <div class="container">
-    <h1>Research</h1>
+    <div class="about-header">
+      <h1>Research</h1>
+    </div>
+
     <h2>Working Papers</h2>
     <div class="description-container">
       <img src="haven_United_States.png" alt="FDI Statistics Comparison for the United States">
@@ -129,18 +136,19 @@
           Trade Diversion and the Rise of Türkiye: The Impact of the Iranian Revolution
         </p>
         <p class="description">
-          <em>Description</em>: This chapter examines how the Iranian Revolution led to trade diversion and the subsequent diplomatic shifts that imvolved all the three Cold War blocks: NATO, Warsaw Pact and MNA.
+          <em>Description</em>: This chapter examines how the Iranian Revolution led to trade diversion and the subsequent diplomatic shifts that involved all the three Cold War blocks: NATO, Warsaw Pact and MNA.
         </p>
       </div>
     </div>
   </div>
+
   <footer>
     © <span id="year"></span> Fabio Enrico Traverso — All Rights Reserved.
   </footer>
+
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
-
 
