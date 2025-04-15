@@ -13,21 +13,6 @@
   <meta name="author" content="Fabio Enrico Traverso">
   <title>Research - Fabio Enrico Traverso</title>
   <style>
-    /* --- Centered Navigation --- */
-   nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-nav a {
-  margin: 0 15px;
-}
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* --- Page Layout --- */
     .description-container {
       display: flex;
       align-items: flex-start;
@@ -48,24 +33,12 @@ nav a {
     .description-container .description {
       margin-top: 0;
     }
-
     h1, h2 {
       text-align: center;
-    }
-
-    /* Optional: Footer styling */
-    footer {
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #777;
-      border-top: 1px solid #eee;
     }
   </style>
 </head>
 <body>
-
   <nav>
     <a href="index.html">About Me</a>
     <a href="research.html">Research</a>
@@ -76,7 +49,6 @@ nav a {
   <div class="container">
     <h1>Research</h1>
     <h2>Working Papers</h2>
-
     <div class="description-container">
       <div>
         <p class="title">
@@ -85,16 +57,14 @@ nav a {
           </a>
         </p>
         <p class="description">
-          Conference papers 333293, Purdue University, Center for Global Trade Analysis, Global Trade Analysis Project.
-          Joint with Eddy Bekkers, Csilla Lakatos and Yu, Roger So<br><br>
-          <em>Description:</em> We construct a three-dimensional (bilateral, by sector) global FDI stock database for the baseline year of 2014 and 2017 which is compatible with the GTAP version 10 and version 11 database. To do so, we perform a gravity estimation on bilateral and by sector FDI stock data collected from the Eurostat and the ITC Investment Map which is subsequently used to extrapolate for a complete dataset by filling in all missing data. Next, the extrapolated dataset is reconciled under a quadratic optimisation procedure with higher dimension FDI data collected from the OECD, UNCTAD and IMF. Finally, we adopt a novel computational method based on the probabilistic theory of absorbing Markov chains to further adjust the reconciled database, its purpose is to correct for geographical distortions in the FDI statistics caused by the presence of tax havens. This paper serves as an update to the previous global FDI database constructed by Gouel et al. 2012 which is based on the GTAP version 7 database with the baseline year of 2004.
+          Conference papers 333293, Purdue University, Center for Global Trade Analysis, Global Trade Analysis Project. Joint with Eddy Bekkers, Csilla Lakatos and Yu, Roger So.<br><br>
+          <em>Description</em>: We construct a three-dimensional (bilateral, by sector) global FDI stock database for the baseline year of 2014 and 2017 which is compatible with the GTAP version 10 and version 11 database. To do so, we perform a gravity estimation on bilateral and by sector FDI stock data collected from the Eurostat and the ITC Investment Map which is subsequently used to extrapolate for a complete dataset by filling in all missing data. Next, the extrapolated dataset is reconciled under a quadratic optimisation procedure with higher dimension FDI data collected from the OECD, UNCTAD and IMF. Finally, we adopt a novel computational method based on the probabilistic theory of absorbing Markov chains to further adjust the reconciled database, its purpose is to correct for geographical distortions in the FDI statistics caused by the presence of tax havens. This paper serves as an update to the previous global FDI database constructed by Gouel et al. 2012 which is based on the GTAP version 7 database with the baseline year of 2004.
         </p>
       </div>
       <img src="haven_United_States.png" alt="FDI Statistics Comparison for the United States">
     </div>
 
     <h2>Research in Progress</h2>
-
     <div class="description-container">
       <div>
         <p class="title">
@@ -103,7 +73,7 @@ nav a {
           </a>
         </p>
         <p class="description">
-          <em>Description:</em> This chapter explores the relationship between industrial automation, international trade, and political outcomes in the United States.
+          <em>Description</em>: This chapter explores the relationship between industrial automation, international trade, and political outcomes in the United States.
         </p>
       </div>
       <img src="spat_corr_shocks.png" alt="Automation and Trade Shocks in the United States">
@@ -115,7 +85,7 @@ nav a {
           "The Political Economy of Autocratic Transitions: The Role of Delegation of Violence"
         </p>
         <p class="description">
-          <em>Description:</em> Joint work with Alberto Bisin and Thierry Verdier. DRAFT COMING SOON
+          <em>Description</em>: Joint work with Alberto Bisin and Thierry Verdier. DRAFT COMING SOON.
         </p>
       </div>
       <img src="Fig4.png" alt="Transition from Democracy to Autocracy">
@@ -127,7 +97,7 @@ nav a {
           Trade Diversion and the Rise of Türkiye: The Impact of the Iranian Revolution
         </p>
         <p class="description">
-          <em>Description:</em> This chapter examines how the Iranian Revolution led to trade diversion and the subsequent diplomatic shifts that involved all the three Cold War blocks: NATO, Warsaw Pact and MNA.
+          <em>Description</em>: This chapter examines how the Iranian Revolution led to trade diversion and the subsequent diplomatic shifts that involved all the three Cold War blocks: NATO, Warsaw Pact and MNA.
         </p>
       </div>
       <img src="graph_IRN_TUR.png" alt="Trade Diversion and the Rise of Türkiye">
@@ -141,6 +111,6 @@ nav a {
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-
 </body>
 </html>
+
