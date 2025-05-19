@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Research - Fabio Enrico Traverso</title>
 
   <meta name="description" content="Research page of Fabio Enrico Traverso - PhD Student in International Economics and Political Economy.">
@@ -74,12 +74,18 @@
       min-width: 250px;
     }
 
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
+    .download-button {
+      display: inline-block;
       margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .download-button:hover {
+      background-color: #0056b3;
     }
 
     footer {
@@ -131,7 +137,7 @@
         </p>
         <p class="description">
           Conference papers 333293, Purdue University, Center for Global Trade Analysis, Global Trade Analysis Project. Joint with Eddy Bekkers, Csilla Lakatos and Yu, Roger So.<br><br>
-          <em>Description</em>: We construct a three-dimensional (bilateral, by sector) global FDI stock database for the baseline year of 2014 and 2017 which is compatible with the GTAP version 10 and version 11 database. To do so, we perform a gravity estimation on bilateral and by sector FDI stock data collected from the Eurostat and the ITC Investment Map which is subsequently used to extrapolate for a complete dataset by filling in all missing data. Next, the extrapolated dataset is reconciled under a quadratic optimisation procedure with higher dimension FDI data collected from the OECD, UNCTAD and IMF. Finally, we adopt a novel computational method based on the probabilistic theory of absorbing Markov chains to further adjust the reconciled database, its purpose is to correct for geographical distortions in the FDI statistics caused by the presence of tax havens. This paper serves as an update to the previous global FDI database constructed by Gouel et al. 2012 which is based on the GTAP version 7 database with the baseline year of 2004.
+          <em>Description</em>: We construct a three-dimensional (bilateral, by sector) global FDI stock database for the baseline year of 2014 and 2017 which is compatible with the GTAP version 10 and version 11 database...
         </p>
       </div>
       <img src="haven_United_States.png" alt="FDI Statistics Comparison for the United States">
@@ -159,9 +165,9 @@
           "The Political Economy of Autocratic Transitions: The Role of Delegation of Violence"
         </p>
         <p class="description">
-          <em>Description</em>: Joint work with Alberto Bisin and Thierry Verdier. Full draft available below.
+          <em>Description</em>: Joint work with Alberto Bisin and Thierry Verdier. Click the button below to download the full draft.
         </p>
-        <iframe src="The_Political_Economy_of_Autocratic_Transitions__The_Role_of_Delegation_of_Violence.pdf"></iframe>
+        <a href="The_Political_Economy_of_Autocratic_Transitions__The_Role_of_Delegation_of_Violence.pdf" download class="download-button">Download Paper</a>
       </div>
       <img src="Fig4.png" alt="Transition from Democracy to Autocracy">
     </div>
@@ -188,6 +194,5 @@
   </script>
 </body>
 </html>
-
 
 
