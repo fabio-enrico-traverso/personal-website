@@ -1,40 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Research page of Fabio Enrico Traverso - PhD Student in International Economics and Political Economy.">
   <meta name="keywords" content="Fabio Enrico Traverso, PhD Student, International Economics, Political Economy, Economic History, Research, Working Papers">
   <meta name="author" content="Fabio Enrico Traverso">
   <title>Research - Fabio Enrico Traverso</title>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: #333;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
     .description-container {
       display: flex;
       align-items: flex-start;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
     }
+
+    .description-container div {
+      flex: 1 1 300px;
+      min-width: 280px;
+    }
+
     .description-container img {
-      max-width: 300px;
+      max-width: 100%;
       height: auto;
       margin-left: 20px;
+      margin-top: 10px;
     }
-    .description-container p {
-      flex: 1;
-    }
+
     .description-container .title {
       font-weight: bold;
       margin-bottom: 5px;
     }
+
     .description-container .description {
       margin-top: 0;
     }
-    h1, h2 {
+
+    footer {
       text-align: center;
+      padding: 15px;
+      background-color: #f2f2f2;
+      margin-top: 40px;
+    }
+
+    /* Mobile optimization */
+    @media (max-width: 768px) {
+      .description-container {
+        flex-direction: column;
+      }
+
+      .description-container img {
+        margin-left: 0;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px 10px;
+      }
+
+      .container {
+        padding: 10px;
+      }
     }
   </style>
 </head>
@@ -59,13 +122,14 @@
         </p>
         <p class="description">
           Conference papers 333293, Purdue University, Center for Global Trade Analysis, Global Trade Analysis Project. Joint with Eddy Bekkers, Csilla Lakatos and Yu, Roger So.<br><br>
-          <em>Description</em>: We construct a three-dimensional (bilateral, by sector) global FDI stock database for the baseline year of 2014 and 2017 which is compatible with the GTAP version 10 and version 11 database. To do so, we perform a gravity estimation on bilateral and by sector FDI stock data collected from the Eurostat and the ITC Investment Map which is subsequently used to extrapolate for a complete dataset by filling in all missing data. Next, the extrapolated dataset is reconciled under a quadratic optimisation procedure with higher dimension FDI data collected from the OECD, UNCTAD and IMF. Finally, we adopt a novel computational method based on the probabilistic theory of absorbing Markov chains to further adjust the reconciled database, its purpose is to correct for geographical distortions in the FDI statistics caused by the presence of tax havens. This paper serves as an update to the previous global FDI database constructed by Gouel et al. 2012 which is based on the GTAP version 7 database with the baseline year of 2004.
+          <em>Description</em>: We construct a three-dimensional (bilateral, by sector) global FDI stock database for the baseline year of 2014 and 2017 which is compatible with the GTAP version 10 and version 11 database. [...]
         </p>
       </div>
       <img src="haven_United_States.png" alt="FDI Statistics Comparison for the United States">
     </div>
 
     <h2>Research in Progress</h2>
+
     <div class="description-container">
       <div>
         <p class="title">
@@ -114,4 +178,5 @@
   </script>
 </body>
 </html>
+
 
