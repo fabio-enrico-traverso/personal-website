@@ -2,16 +2,76 @@
 <html lang="en">
 <head>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CV</title>
-  <link rel="stylesheet" href="style.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fbfd;
+    color: #1a1a1a;
+  }
+  nav {
+    background-color: #1a4e9a;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(26, 78, 154, 0.3);
+  }
+  nav a {
+    color: #cce4ff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  nav a:hover {
+    color: #ffdd57;
+  }
+  .container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  h1 {
+    color: #1a4e9a;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 1rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333;
+  }
+  a {
+    color: #1a4e9a;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #e0e6f1;
+    color: #1a4e9a;
+    font-weight: 600;
+    margin-top: 40px;
+    border-top: 1px solid #b0c4de;
+  }
+</style>
 </head>
-
 <body>
   <nav>
     <a href="index.html">About Me</a>
@@ -20,15 +80,19 @@
     <a href="misc.html">Miscellanea</a>
     <a href="contact.html">Contact</a>
   </nav>
+
   <div class="container">
     <h1>CV</h1>
-    <p>Download my CV: <a href="CV.pdf" target="_blank">Click here</a></p>
+    <p>Download my CV: <a href="CV.pdf" target="_blank" rel="noopener noreferrer">Click here</a></p>
   </div>
- <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-</body>
+
   <footer>
-  © <span id="year"></span> Fabio Enrico Traverso — All Rights Reserved.
-</footer>
+    © <span id="year"></span> Fabio Enrico Traverso — All Rights Reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
+
