@@ -13,12 +13,106 @@
   <meta name="author" content="Fabio Enrico Traverso">
   <title>About Fabio Enrico Traverso - PhD Student in International Economics</title>
 <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9fbfd;
+    color: #1a1a1a;
+  }
+
+  nav {
+    background-color: #1a4e9a; /* Blue nav background */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(26, 78, 154, 0.3);
+  }
+
+  nav a {
+    color: #cce4ff; /* Light blue links */
+    text-decoration: none;
+    margin: 0 15px;
+    display: inline-block;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #ffdd57; /* Accent yellow on hover */
+  }
+
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  h1 {
+    color: #1a4e9a; /* Blue heading */
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .about-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
   .profile-pic {
-    max-width: 50%;      /* Scales 1.5x relative to container, but safely */
-    width: 100%;          /* Responsive within that limit */
-    height: auto;         /* Keeps the correct aspect ratio */
-    display: block;       /* Enables margin auto centering */
-    margin: 0 auto;       /* Centers the image horizontally */
+    max-width: 50%;      /* Scales relative to container */
+    width: 100%;         /* Responsive within that limit */
+    height: auto;        /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #1a4e9a;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(26, 78, 154, 0.3);
+  }
+
+  p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  p ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+
+  a {
+    color: #1a4e9a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #e0e6f1;
+    color: #1a4e9a;
+    font-weight: 600;
+    margin-top: 40px;
+    border-top: 1px solid #b0c4de;
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .profile-pic {
+      max-width: 80%;
+    }
+    nav a {
+      display: block;
+      margin: 8px 0;
+    }
   }
 </style>
 </head>
@@ -39,26 +133,26 @@
 
     <p>
       I am a PhD Student in Economics at the 
-      <a href="https://www.gsefm.eu/about-us.html" target="_blank">GSEFM Frankfurt</a>, 
+      <a href="https://www.gsefm.eu/about-us.html" target="_blank" rel="noopener noreferrer">GSEFM Frankfurt</a>, 
       specializing in Political Economy, International Economics, and Economic History. 
       I am currently visiting the 
-      <a href="https://www.parisschoolofeconomics.eu" target="_blank">Paris School of Economics</a> 
+      <a href="https://www.parisschoolofeconomics.eu" target="_blank" rel="noopener noreferrer">Paris School of Economics</a> 
       and am also part of the staff at the 
-      <a href="https://www.vwl2.wi.tu-darmstadt.de/" target="_blank">Chair of International Economics, TU Darmstadt</a>.
+      <a href="https://www.vwl2.wi.tu-darmstadt.de/" target="_blank" rel="noopener noreferrer">Chair of International Economics, TU Darmstadt</a>.
     </p>
     <p>
       I study the roots and consequences of autocratic and populist transitions using tools 
       from Institutional Economics, International Trade, and Applied Econometrics. My current projects include:
-      <ul>
-        <li>Exploring the relationship between automation, international trade, and political outcomes in the United States.</li>
-        <li>Investigating the role of violent avant-gardes in the transition from democratic to autocratic regimes, in collaboration with Alberto Bisin and Thierry Verdier.</li>
-        <li>Analyzing how the Iranian Revolution led to trade diversion and the subsequent rise of Türkiye diplomatic centrality.</li>
-      </ul>
     </p>
+    <ul>
+      <li>Exploring the relationship between automation, international trade, and political outcomes in the United States.</li>
+      <li>Investigating the role of violent avant-gardes in the transition from democratic to autocratic regimes, in collaboration with Alberto Bisin and Thierry Verdier.</li>
+      <li>Analyzing how the Iranian Revolution led to trade diversion and the subsequent rise of Türkiye diplomatic centrality.</li>
+    </ul>
     <p>
       In addition to my academic pursuits, I am deeply interested in debating international and italian affairs. 
       I am a proud member of 
-      <a href="https://www.liberioltreleillusioni.it/" target="_blank">Liberi Oltre le Illusioni</a>, 
+      <a href="https://www.liberioltreleillusioni.it/" target="_blank" rel="noopener noreferrer">Liberi Oltre le Illusioni</a>, 
       an italian source of news that is neutral, unbiased, and truly evidence-based. 
       I contribute by writing articles on international economics and politics and interviewing experts in the field of economics and political science.
     </p>
@@ -78,7 +172,5 @@
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
-</html>
-
 </html>
 
